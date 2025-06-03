@@ -1,0 +1,46 @@
+.outerBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.outerBox .left h2{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgba(2, 6, 12, 0.75);
+}
+.outerBox .right{
+    position: relative;
+    flex: 0 0 25%;
+    overflow: hidden;
+}
+.outerBox .right img {
+    width: 100%;
+}
+.right button{
+    position: absolute;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgb(27, 166, 114);
+    background: #fff;
+
+    box-shadow: 1px 1px 1px #e1e1e1;
+    padding: 6px 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    border: 0;
+}
+.right button:hover,
+.right button:visited,
+.right button:focus,
+.right button:focus-visible{
+    border: 0;
+    outline: 0;
+}

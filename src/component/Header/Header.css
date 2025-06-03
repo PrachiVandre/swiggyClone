@@ -1,0 +1,38 @@
+.header{
+    box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #fff;
+    z-index: 1000;
+    will-change: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    contain: size layout style;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.lefts {
+    flex: 0 0 50%;
+}
+.right{
+    flex: 0 0 43%;
+}
+.lefts img {
+    width: 150px;
+}
+ul li{display: flex}
+ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

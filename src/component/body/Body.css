@@ -1,0 +1,25 @@
+.body{
+    margin-top: 100px;
+    padding: 0 50px;
+}
+.search{
+    margin-bottom: 20px;
+}
+.search input{
+    height: 29px;
+    border: 1px solid #ccc;
+}
+.search button{
+    background: #fe5005;
+    color: #fff;
+    margin: 20px;
+    padding: 5px 20px;
+    border-radius: 0;
+}
+.search button:hover{
+    border: 1px solid #fe5005;
+}
+ .online{
+    margin: 150px auto;
+    text-align: center;
+ }
