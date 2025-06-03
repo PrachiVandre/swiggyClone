@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './RestaurantCategory.css'
 import ItemList from '../restaurantmenu/ItemList';
 import { IoIosArrowDown } from "react-icons/io";
