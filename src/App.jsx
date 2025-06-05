@@ -3,7 +3,7 @@ import './App.css'
 import Header from './component/Header/Header'
 // import Home from './component/Home/Home'
 import Home from './component/Home/Home';
-import About from './component/about/About';
+import Contact from './component/contact/Contact';
 import Error from './component/error/Error';
 // import Products from './component/products/Products'
 import RestaurantMenu from './component/restaurantmenu/RestaurantMenu'
@@ -32,7 +32,7 @@ function App() {
         {/* <Home /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/product/:restId" element={<RestaurantMenu />} />
           <Route path="*" element={<Error />} />
           <Route path="/cart" element={<Cart />} />

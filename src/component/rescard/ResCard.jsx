@@ -5,15 +5,14 @@ import {CARD_IMG} from '../../utils/constant'
 import userContext from '../../utils/userContext';
 
 const ResCard = ({carddetail}) => {
-  
   const {loggedInuser} = useContext(userContext)
-
-
+  console.log("CARDS", carddetail);
   return (
     <div className="res-card">
 
       {
        carddetail && carddetail.map((cards)=>{   
+     
           const{id, cloudinaryImageId, name, avgRating, sla, cuisines, locality} = cards?.info;
 
           return(
@@ -26,7 +25,7 @@ const ResCard = ({carddetail}) => {
                 &nbsp;&nbsp;•&nbsp;{sla?.slaString}</h5>
               <p>{cuisines.join(", ")}</p>
               <p>{locality}</p>
-              <h6>{loggedInuser}</h6>
+              <h6>{loggedInuser}</h6> 
             </div>
             </Link>
           )

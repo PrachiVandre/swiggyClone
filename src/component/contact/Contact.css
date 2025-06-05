@@ -1,0 +1,19 @@
+h1{
+    margin: 120px 50px 20px;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.contacts input {
+    padding: 10px;
+    margin-bottom: 20px;
+}   
+.contacts button {
+    background-color: #161616;
+    color: #fff;
+}

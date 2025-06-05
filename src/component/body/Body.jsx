@@ -9,6 +9,8 @@ const Body = () => {
   const[inputval, setInputval] = useState();
   const [listData, setListdata] = useState([]);
 
+  console.log("listdata", listData);
+
   const onlineStatus = useOnlineStatus();
 
   const getAllCards = async () => {
