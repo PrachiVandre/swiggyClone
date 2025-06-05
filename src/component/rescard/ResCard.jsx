@@ -6,7 +6,7 @@ import userContext from '../../utils/userContext';
 
 const ResCard = ({carddetail}) => {
   const {loggedInuser} = useContext(userContext)
-  console.log("CARDS", carddetail);
+
   return (
     <div className="res-card">
 
@@ -17,7 +17,7 @@ const ResCard = ({carddetail}) => {
 
           return(
            <Link key={id} to={`/product/${id}`}> 
-              <div  className='cards'>
+              <div  data-testid="rescard" className='cards'>
               <img src={`${CARD_IMG}${cloudinaryImageId}`}/>
               <h4 style={{fontSize:'18px'}}>{name}</h4>
               <h5 style={{fontSize:'16px'}}>

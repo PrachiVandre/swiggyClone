@@ -1,10 +1,26 @@
 import {render, screen} from '@testing-library/react'
-import {test, expect, describe} from 'vitest';
+import {test, expect, describe, beforeAll, beforeEach, afterAll, afterEach} from 'vitest';
 import Contact from '../contact/Contact'
 import "@testing-library/jest-dom"
 
 
 describe("Contact us page test cases", ()=>{
+
+    afterAll(()=>{
+        console.log("After All");
+    })
+
+    afterEach(()=>{
+        console.log("After Each");
+    })
+
+    beforeAll(()=>{
+        console.log("Before All");
+    })
+    beforeEach(()=>{
+        console.log("Before Each");
+    })
+
     test("Should load contact us component", () => {
         render(<Contact />);
         const heading = screen.getByRole('heading');

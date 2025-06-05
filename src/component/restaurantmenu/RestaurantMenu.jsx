@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./RestaurantMenu.css";
 import { useParams } from "react-router-dom";
 import { MENU_IMG } from "../../utils/constant";
@@ -23,10 +23,10 @@ const RestaurantMenu = () => {
   // console.log(menu);
   //console.log(menu[2]?.card?.card?.["@type"])
 
-  const getRandomColor = () => {
-    const bgColors = ["#fdf3e3", "#e6f4ea", "#e6f4f1", "#e9f0fa", "#fff5f0"];
-    return bgColors[Math.floor(Math.random() * bgColors.length)];
-  };
+  // const getRandomColor = () => {
+  //   const bgColors = ["#fdf3e3", "#e6f4ea", "#e6f4f1", "#e9f0fa", "#fff5f0"];
+  //   return bgColors[Math.floor(Math.random() * bgColors.length)];
+  // };
 
   const filteredMenu = menu.filter(
     (cat) => cat?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"

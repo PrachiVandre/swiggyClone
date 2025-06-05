@@ -41,7 +41,7 @@ const Body = () => {
   return (
   <div className="body">
     <div className="search">
-      <input type="text" value={inputval} onChange={(e)=> setInputval(e.target.value)}/>
+      <input placeholder="Search" type="text" value={inputval} onChange={(e)=> setInputval(e.target.value)}/>
       <button onClick={handleClick}>Search</button>
     </div>
     <div className="res-container"><ResCard carddetail={listData}/></div>

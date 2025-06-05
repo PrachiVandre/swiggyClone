@@ -11,8 +11,8 @@ const RestaurantCategory = ({data, showItem, setShowindex}) => {
 
   return (  
     <div key={data.categoryId} className='accordian heading'>
-        <div className="accordian_header" onClick={()=> handleShow()}>
-            <h3>{data?.title} ({data?.itemCards.length})</h3>
+        <div data-testid="accordian_header" className="accordian_header" onClick={()=> handleShow()}>
+            <h3>{data?.title} ({data?.itemCards?.length})</h3>
             <span><IoIosArrowDown /></span>
         </div>
        
