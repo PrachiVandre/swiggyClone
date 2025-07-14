@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/swiggyClone/", // 👈 Add this line (repo name)
   plugins: [react()],
-  server:{
+  server: {
     open: true,
-    port: 5174
+    port: 5174,
   },
   test: {
     globals: true,
@@ -14,6 +15,6 @@ export default defineConfig({
   },
   coverage: {
     reporter: ['text', 'html'],
-    reportsDirectory: './coverage', // optional
+    reportsDirectory: './coverage',
   }
-})
+});
