@@ -1,12 +1,50 @@
-# React + Vite
+# 🍔 Swiggy Clone (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive food delivery app clone inspired by Swiggy. Built using **React**, **Vite**, **Redux Toolkit**, and modern development practices.
 
-Currently, two official plugins are available:
+![swiggy clone banner](./screenshot.png) <!-- Replace with actual screenshot path -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Click here to view live](https://prachivandre.github.io/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- 🔍 Browse restaurants and menus
+- 🍔 Add items to cart
+- 🛒 Cart management with Redux Toolkit
+- 🧭 Client-side routing using React Router
+- 📦 Component-based reusable architecture
+- ⚡️ Fast performance with Vite
+
+---
+
+## 🛠 Tech Stack
+
+| Tech | Description |
+|------|-------------|
+| React | UI Library |
+| Vite | Lightning-fast bundler |
+| Redux Toolkit | Global state management |
+| React Router | Routing |
+| Tailwind / CSS | Styling |
+| GitHub Pages | Deployment |
+
+---
+
+## 📁 Folder Structure
+
+```bash
+swiggyClone/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── redux/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+├── vite.config.js
+└── package.json
