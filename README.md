@@ -6,7 +6,7 @@ A responsive food delivery app clone inspired by Swiggy. Built using **React**, 
 
 ## 🔗 Live Demo
 
-👉 [Click here to view live](https://prachivandre.github.io/)
+👉 [Click here to view live]([https://prachivandre.github.io/](https://prachivandre.github.io/swiggyClone/))
 
 ---
 
