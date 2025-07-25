@@ -2,8 +2,6 @@
 
 A responsive food delivery app clone inspired by Swiggy. Built using **React**, **Vite**, **Redux Toolkit**, and modern development practices.
 
-![swiggy clone banner](./screenshot.png) <!-- Replace with actual screenshot path -->
-
 ## 🔗 Live Demo
 
 👉 [Click here to view live](https://prachivandre.github.io/swiggyClone/)
@@ -19,7 +17,22 @@ A responsive food delivery app clone inspired by Swiggy. Built using **React**, 
 - 📦 Component-based reusable architecture
 - ⚡️ Fast performance with Vite
 
----
+## 🏠 Home Page
+![Home Page](screenshots/screencapture-localhost-5174-2025-07-25-21_39_51.png)
+
+## Users Current Location:
+![User current location](screenshots/2.PNG)
+
+## Signup/Login form
+![Login/signup form](screenshots/5.jpg)
+
+## Add Item Page
+![Add Item Page](screenshots/screencapture-localhost-5174-product-386176-2025-07-25-21_41_12.png)
+
+![Add Item Accordian](screenshots/screencapture-localhost-5174-product-386176-2025-07-25-21_41_28.png)
+
+## Add to Cart page
+![Add to Cart](screenshots/screencapture-localhost-5174-cart-2025-07-25-21_44_26.png)
 
 ## 🛠 Tech Stack
 
