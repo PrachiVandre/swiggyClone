@@ -40,6 +40,10 @@ const RestaurantMenu = () => {
   return (
     <div className="restodetails">
       <h1>{name}</h1>
+      <div className="boxtabs">
+        <span className="active">Order Online</span>
+        <span>Dineout</span>
+      </div>
       <div className="headerwrap">
         <div className="wrap">
           <h4>
@@ -60,7 +64,7 @@ const RestaurantMenu = () => {
       <div className="menuwrapper">
         {filteredMenu.map((category, index) => {
             return(
-              <RestaurantCategory key={index}  showItem={index == showIndex ? true : false } setShowindex={()=>setShowindex(index)} data={category?.card?.card} />
+              <RestaurantCategory key={index}  showItem={index == showIndex} setShowindex={() => setShowindex(index === showIndex ? null : index)} data={category?.card?.card} />
             )
         })}
       </div>

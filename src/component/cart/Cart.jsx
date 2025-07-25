@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cartItem = useSelector((store) => store.cart.items);
-  console.log("cartItem", cartItem);
-
   const dispatch = useDispatch();
 
   const handleClear = () => {

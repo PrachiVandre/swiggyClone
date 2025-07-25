@@ -1,10 +1,10 @@
 import React from 'react'
-import Body from '../body/Body'
+import Main from '../main/Main'
 
 const Home = () => {
   return (
     <div>
-        <Body />
+        <Main />
     </div>
   )
 }

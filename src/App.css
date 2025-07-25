@@ -1,0 +1,7 @@
+.page-layout{
+    width: 85%;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}

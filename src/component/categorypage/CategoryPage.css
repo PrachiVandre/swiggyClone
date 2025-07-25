@@ -1,0 +1,23 @@
+.pageLayout{
+    margin: 0 45px;
+}
+.pageLayout h1{
+  font-size: 40px;
+  font-weight: bold;
+  color:#000;
+  margin: 120px 0 0;
+}
+.pageLayout h2{
+    text-transform: capitalize;
+}
+.pageLayout h3{
+    font-size: 18px;
+    opacity: .9;
+    margin-top: 8px;
+    max-width: 800px;
+    color:#000;
+}
+.cardwrapper{
+       display: flex;
+    flex-wrap: wrap;
+}

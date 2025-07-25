@@ -11,9 +11,12 @@
     color: rgba(2, 6, 12, 0.75);
 }
 .outerBox .right{
-    position: relative;
+        position: relative;
     flex: 0 0 25%;
     overflow: hidden;
+    width: 156px;
+    height: 144px;
+    border-radius: 12px;
 }
 .outerBox .right img {
     width: 100%;
@@ -27,15 +30,14 @@
     letter-spacing: -0.45px;
     color: rgb(27, 166, 114);
     background: #fff;
-
     box-shadow: 1px 1px 1px #e1e1e1;
     padding: 6px 20px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 1);
-    color: black;
     border: 0;
+    width: max-content;
 }
 .right button:hover,
 .right button:visited,
@@ -43,4 +45,11 @@
 .right button:focus-visible{
     border: 0;
     outline: 0;
+}
+.description{
+      overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-width: 385px;
+    max-height: 46px;
 }

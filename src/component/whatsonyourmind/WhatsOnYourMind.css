@@ -1,0 +1,41 @@
+.imgWrap {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+   overflow-x: scroll;
+}
+.categoryList{
+    display: flex;
+}
+.wrapper {
+    margin-top:120px;
+    padding: 0 22px;
+}
+.wrapper h2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgWrap::-webkit-scrollbar {
+  display: none; /* Hide scrollbar like Swiggy */
+}
+.imgWrap p {
+  flex: 0 0 auto;
+  width: 13%;
+}
+.imgWrap img {
+  object-fit: cover;
+  margin-bottom: 8px;
+  width: 90%;
+  cursor:pointer;
+}
+.backward, .forward{
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    padding: 3px 5px 2px 5px;
+    margin: 5px;
+    cursor: pointer;
+}

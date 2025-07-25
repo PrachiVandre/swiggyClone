@@ -5,6 +5,7 @@ import {CARD_IMG} from '../../utils/constant'
 import userContext from '../../utils/userContext';
 
 const ResCard = ({carddetail}) => {
+ 
   const {loggedInuser} = useContext(userContext)
 
   return (
