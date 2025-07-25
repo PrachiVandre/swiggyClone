@@ -7,7 +7,7 @@ import Error from './component/error/Error';
 import RestaurantMenu from './component/restaurantmenu/RestaurantMenu'
 import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import userContext from './utils/userContext';
+import { UserContext } from './utils/userContext';
 import { Provider } from 'react-redux';
 import appStore from './utils/appStore';
 import Cart from './component/cart/Cart';
@@ -28,7 +28,7 @@ function App() {
   return (
    <div className='page-layout'>
     <Provider store={appStore}>
-      <userContext.Provider value={{loggedInuser: userName}}>
+      <UserContext.Provider value={{loggedInuser: userName}}>
           <Header setIsOpen={()=>setIsOpen(true)}/>
           {/* <Home /> */}
           <Routes>
@@ -40,7 +40,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/category/:id" element={<CategoryPage />} />
           </Routes>
-        </userContext.Provider>
+        </UserContext.Provider>
       </Provider>
     <SignInSidebar isOpen={isOpen} setIsOpen={()=>setIsOpen(false)}/>
    </div>
