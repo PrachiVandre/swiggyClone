@@ -43,7 +43,7 @@ const WhatsOnYourMind = ({list}) => {
         <div className="categoryList">
           {categoryList?.map((item) => {
              return (
-              <>
+              
               <p key={item.id}>
                 <img onClick={()=>handleMenu(item?.action?.link)}           
                   src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/${item.imageId}`}
@@ -51,7 +51,7 @@ const WhatsOnYourMind = ({list}) => {
                 
               </p>
              
-              </>
+             
             );
           })}
         </div>

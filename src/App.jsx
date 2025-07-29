@@ -7,7 +7,7 @@ import Error from './component/error/Error';
 import RestaurantMenu from './component/restaurantmenu/RestaurantMenu'
 import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { UserContext } from './utils/userContext';
+import UserContext from './utils/userContext';
 import { Provider } from 'react-redux';
 import appStore from './utils/appStore';
 import Cart from './component/cart/Cart';
