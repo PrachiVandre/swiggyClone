@@ -2,15 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./Main.css";
 import WhatsOnYourMind from "../whatsonyourmind/WhatsOnYourMind";
 import RestoChain from "../restochain/RestoChain";
+import { API_URL } from "../../utils/constant";
 
 const Main = () => {
   const [list, setAllList] = useState([]);
 
 
   const getAllList = async () => {
-    const res = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5009379&lng=73.9010765&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+    const res = await fetch(API_URL);
     const json = await res.json();
-    setAllList(json?.data?.cards);
+    setAllList(json?.data?.cards ?? []);
   };
 
   useEffect(() => {
