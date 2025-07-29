@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const proxy = "https://corsproxy.io/?";
+const proxy = "https://thingproxy.freeboard.io/fetch/";
 
 const useCategorylist = (collectionId) => {
 const [restaurantList, setRestaurantList] = useState([]);
