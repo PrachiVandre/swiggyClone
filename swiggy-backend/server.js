@@ -1,10 +1,11 @@
-const express = require("express");
-const fetch = require("node-fetch");
-const cors = require("cors");
+import express from "express";
+import fetch from "node-fetch";
+import cors from "cors";
 
 const app = express();
 app.use(cors());
 
+// 👇 Route to get restaurant list
 app.get("/api/restaurants", async (req, res) => {
   try {
     const url =
@@ -12,34 +13,39 @@ app.get("/api/restaurants", async (req, res) => {
 
     const response = await fetch(url, {
       headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
-        "Accept": "application/json",
-      },
+        "User-Agent": "Mozilla/5.0"
+      }
     });
 
     const data = await response.json();
     res.json(data);
   } catch (err) {
-    console.error("Error fetching Swiggy API:", err);
-    res.status(500).json({ error: "Failed to fetch data" });
+    res.status(500).json({ error: "Failed to fetch restaurant data" });
   }
 });
 
+// 👇 Route to get menu details by restaurantId
 app.get("/api/menu/:id", async (req, res) => {
-  const restaurantId = req.params.id;
-  const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.52110&lng=73.85020&restaurantId=${restaurantId}`;
+  const { id } = req.params;
 
   try {
-    const response = await fetch(url);
+    const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.52110&lng=73.85020&restaurantId=${id}`;
+
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0"
+      }
+    });
+
     const data = await response.json();
     res.json(data);
   } catch (err) {
-     console.error("Error:", err);
     res.status(500).json({ error: "Failed to fetch menu data" });
   }
 });
 
-app.listen(5000, () => {
-  console.log("Server running on http://localhost:5000");
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 });
